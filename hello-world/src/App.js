@@ -21,6 +21,17 @@ import ParentComp from "./components/PureComponent/ParentComp";
 import RefsDemo from "./components/Ref/RefsDemo";
 import ParentRef from "./components/Ref/ParentRef";
 import ForwardRefParentInput from "./components/Ref/ForwardRefParentInput";
+import { PortalDemo } from "./components/PortalDemo";
+import { Hero } from "./components/Error Boundary/Hero";
+import ErrorBoundary from "./components/Error Boundary/ErrorBoundary";
+// import ClickCounter from "./components/Higher Order Component/ClickCounter";
+import HoverCounter from "./components/Higher Order Component/HoverCounter";
+import ClickCounterRender from "./components/Render Props/ClickCounterRender";
+import HoverCounterRender from "./components/Render Props/HoverCounterRender";
+import User from "./components/Render Props/User";
+import CounterRender from "./components/Render Props/CounterRender";
+import ComponentC from "./components/Context/ComponentC";
+import { UserProvider, UserConsumer } from "./components/Context/userContext";
 
 function App() {
   return (
@@ -44,7 +55,39 @@ function App() {
       {/*<ParentComp />*/}
       {/*<RefsDemo />*/}
       {/*<ParentRef />*/}
-      <ForwardRefParentInput />
+      {/*<ForwardRefParentInput />*/}
+      {/*<PortalDemo />*/}
+      {/*  <ErrorBoundary>
+        <Hero heroName="Joker" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName="Jetli" />
+      </ErrorBoundary>*/}
+      {/*This component is inside a HOC so ds props will not go to d component directly but to d HOC*/}
+      {/*<ClickCounter name="Michaelz" />*/}
+      {/*<HoverCounter />*/}
+      {/*    RENDER PROPS  */}
+      {/*  <ClickCounterRender />
+      <HoverCounterRender />
+      <User render={(isLoggedIn) => (isLoggedIn ? "Michaelz" : "Guest")} />*/}
+
+      {/* <CounterRender
+        render={(count, incrementCount) => (
+          <ClickCounterRender count={count} incrementCount={incrementCount} />
+        )}
+      />
+
+      <CounterRender
+        render={(count, incrementCount) => (
+          <HoverCounterRender count={count} incrementCount={incrementCount} />
+        )}
+      />*/}
+      {/*<UserProvider value="Michaelz">*/}
+      <ComponentC />
+      {/*</UserProvider>*/}
     </div>
   );
 }
