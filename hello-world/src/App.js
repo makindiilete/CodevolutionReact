@@ -32,6 +32,8 @@ import User from "./components/Render Props/User";
 import CounterRender from "./components/Render Props/CounterRender";
 import ComponentC from "./components/Context/ComponentC";
 import { UserProvider, UserConsumer } from "./components/Context/userContext";
+import PostList from "./components/HTTP/PostList";
+import PostForm from "./components/HTTP/PostForm";
 
 function App() {
   return (
@@ -85,9 +87,12 @@ function App() {
           <HoverCounterRender count={count} incrementCount={incrementCount} />
         )}
       />*/}
-      {/*<UserProvider value="Michaelz">*/}
+      {/*      <UserProvider value="Michaelz">
       <ComponentC />
-      {/*</UserProvider>*/}
+      </UserProvider>*/}
+
+      {/*<PostList />*/}
+      <PostForm />
     </div>
   );
 }
