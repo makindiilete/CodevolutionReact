@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { UserConsumer } from "../Context/userContext";
+import { UserConsumer } from "./userContext";
 
 class ComponentF extends Component {
   render() {

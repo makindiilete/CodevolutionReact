@@ -1,0 +1,3 @@
+/*
+Useful for performance optimization but should not be used all the time
+*/

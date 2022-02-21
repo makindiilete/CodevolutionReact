@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../assets/css/StyleSheet.css";
+import "../../assets/css/StyleSheet.css";
 
 const StyleSheet = (props) => {
   // Applying css class conditionally
